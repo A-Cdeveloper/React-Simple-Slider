@@ -19,30 +19,23 @@ body {
 }
 
 .slider {
+  display: flex;
   width: 50rem;
   height: 35rem;
   border: 2px solid white;
   border-radius: 8px;
-  position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slider img {
-  width: 100%;
+  width: 50rem;
   height: 100%;
   object-fit: cover;
-  /* opacity: 0; */
-  position: absolute;
-  top: 0;
-  transform: translateX(200%) scale(1);
-  transition: all 1s ease-in-out;
-  transform-origin: right;
 }
 
-.slider img.active {
-  /* opacity: 1; */
-  transform: translateX(0) scale(1);
-}
+/* .slider img.active {
+  transform: translateX(0);
+} */
 
 .controls {
   height: 35px;
@@ -51,6 +44,7 @@ body {
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
+  display: none;
 }
 
 button {
