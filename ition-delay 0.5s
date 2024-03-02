@@ -1,0 +1,17 @@
+[33m9437159[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mtest[m[33m)[m HEAD@{0}: commit: complete slide in slider
+[33m2c4d3e9[m HEAD@{1}: commit: list image sin row
+[33mcd6d343[m HEAD@{2}: commit: short image list for testing purposes
+[33m7da522b[m HEAD@{3}: commit: stop auto for testing purposes
+[33m15a20b2[m HEAD@{4}: checkout: moving from master to test
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{5}: checkout: moving from test to master
+[33m15a20b2[m HEAD@{6}: commit: initial commit to test branch
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{7}: checkout: moving from master to test
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{8}: checkout: moving from test to master
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{9}: checkout: moving from master to test
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{10}: reset: moving to HEAD
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{11}: checkout: moving from test to master
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{12}: checkout: moving from master to test
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{13}: checkout: moving from master to master
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{14}: checkout: moving from test to master
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{15}: checkout: moving from master to test
+[33m9bed9ae[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{16}: commit (initial): Initial commit
