@@ -43,7 +43,7 @@ const images = [
   },
 ];
 
-const numberImages = images.length;
+const numberImages = images.slice(0, 3).length;
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -80,14 +80,14 @@ function App() {
         onMouseEnter={stopAutoHandler}
         onMouseLeave={startAutoHandler}
       >
-        {images.map((img) => {
+        {images.slice(0, 3).map((img) => {
           return (
             <img
               key={img.index}
               src={img.src}
               alt={img.name}
               className={activeIndex === img.index ? "active" : undefined}
-              data-next={img.index}
+              data-next={img.index + 1}
             />
           );
         })}
