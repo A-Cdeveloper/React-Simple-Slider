@@ -47,7 +47,7 @@ const numberImages = images.length;
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(1);
-  const [auto, setAuto] = useState(true);
+  const [auto, setAuto] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -58,7 +58,7 @@ function App() {
   }, [activeIndex, auto]);
 
   const startAutoHandler = () => {
-    setAuto(true);
+    setAuto(false);
   };
 
   const stopAutoHandler = () => {
