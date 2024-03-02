@@ -46,19 +46,19 @@ const images = [
 const numberImages = images.slice(0, 3).length;
 
 function App() {
-  const [activeIndex, setActiveIndex] = useState(1);
-  const [auto, setAuto] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [auto, setAuto] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (activeIndex === numberImages || !auto) return;
+      if (activeIndex === numberImages - 1 || !auto) return;
       nextSlideHandler();
     }, 4000);
     return () => clearInterval(timer);
   }, [activeIndex, auto]);
 
   const startAutoHandler = () => {
-    setAuto(false);
+    setAuto(true);
   };
 
   const stopAutoHandler = () => {
@@ -80,26 +80,31 @@ function App() {
         onMouseEnter={stopAutoHandler}
         onMouseLeave={startAutoHandler}
       >
-        {images.slice(0, 3).map((img) => {
-          return (
-            <img
-              key={img.index}
-              src={img.src}
-              alt={img.name}
-              className={activeIndex === img.index ? "active" : undefined}
-              data-next={img.index + 1}
-            />
-          );
-        })}
+        <div
+          className="slider-track"
+          style={{
+            transform: `translateX(${activeIndex * 100 * -1}%)`,
+          }}
+        >
+          {images.slice(0, 3).map((img) => {
+            return (
+              <img
+                key={img.index}
+                src={img.src}
+                alt={img.name}
+                className={activeIndex === img.index - 1 ? "active" : undefined}
+              />
+            );
+          })}
+        </div>
       </div>
-
       <div className="controls">
-        {activeIndex !== 1 && (
+        {activeIndex !== 0 && (
           <button className="prev" onClick={prevSlideHandler}>
             Prev
           </button>
         )}
-        {activeIndex !== numberImages && (
+        {activeIndex !== numberImages - 1 && (
           <button className="next" onClick={nextSlideHandler}>
             Next
           </button>
