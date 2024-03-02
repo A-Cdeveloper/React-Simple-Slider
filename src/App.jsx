@@ -43,7 +43,7 @@ const images = [
   },
 ];
 
-const numberImages = images.slice(0, 3).length;
+const numberImages = images.length;
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -86,7 +86,7 @@ function App() {
             transform: `translateX(${activeIndex * 100 * -1}%)`,
           }}
         >
-          {images.slice(0, 3).map((img) => {
+          {images.map((img) => {
             return (
               <img
                 key={img.index}
